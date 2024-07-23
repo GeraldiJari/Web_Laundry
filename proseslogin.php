@@ -31,7 +31,7 @@ if (mysqli_num_rows($q) == 1) {
     $_SESSION['nohp'] = $row['no_hp'];
     $_SESSION['gambar'] = $row['gambar'];	
 
-	header('location:admin/index.php');
+	header('location:admin/index');
 } else {
 	header('location:index.php?error=4');
 }

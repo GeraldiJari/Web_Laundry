@@ -107,7 +107,7 @@ if (empty($_SESSION['username'])){
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="index.php" class="nav-link">
+            <a href="index" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -234,7 +234,7 @@ if (empty($_SESSION['username'])){
             </a>
           </li>
           <li class="nav-item">
-            <a href="logout.php" class="nav-link">
+            <a href="logout.php" class="nav-link" onclick="return confirm ('Anda Yakin Ingin Keluar?');">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Log Out
