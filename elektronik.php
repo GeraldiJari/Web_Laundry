@@ -77,7 +77,7 @@
 
                 <div id="myTabContent" class="tab-content">
                     
-                    <div class="tab-pane fade" id="service-one">
+                    <div class="tab-pane fade active in" id="service-one">
                         <h4>Alat Elektronik</h4>
                         <p>Kami menyediakan berbagai macam Alat elektronik seperti<br>
                             - Lampu<br>

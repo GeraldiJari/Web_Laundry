@@ -45,9 +45,6 @@
 		case 'TambahGallery':
 			include 'page/gallery/input-gallery.php';
 			break;
-		case 'EditKaryawan':
-			include 'page/karyawan/editkaryawan.php';
-			break;
 		case 'PengaturanKaryawan':
 			include 'page/karyawan/pengaturankaryawan.php';
 			break;
@@ -62,16 +59,22 @@
 		case 'TambahKaryawan':
 			include 'page/karyawan/input_karyawan.php';
 			break;
-		case 'EditTransaksi':
-			include 'page/transaksi/edittransaksi.php';
+		case 'EditKaryawan':
+			include 'page/karyawan/edit-jadwal.php';
 			break;
-		case 'HapusTransaksi':
-			include 'page/transaksi/hapustransaksi.php';
-			break;			
+		case 'HapusKaryawan':
+			include 'page/karyawan/hapus-karyawan.php';
+			break;
+		case 'UpdateKaryawan':
+			include 'page/karyawan/update-karyawan.php';
+			break;				
 
 		// User
 		case 'Inbox':
 			include 'page/pesanmasuk.php';
+			break;
+		case 'HapusPesan':
+			include 'page/delete.php';
 			break;
 		case 'UbahPassword':
 			include 'page/user/ubahpassword.php';

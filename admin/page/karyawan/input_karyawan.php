@@ -20,15 +20,15 @@
                 <section class="content">
 <?php
 		if(isset($_POST['input'])){
-				$id_produk	 = $_POST['id_produk'];
-				$nama_produk = $_POST['nama_produk'];
-				$unit        = $_POST['unit'];
-				$harga   	 = $_POST['harga'];
+				$id_karyawan	 = $_POST['id_karyawan'];
+				$nama_karyawan = $_POST['nama_karyawan'];
+        $pekerjaan = $_POST['pekerjaan'];
+				$waktu        = $_POST['waktu'];
 				
-				$cek = mysqli_query($koneksi, "SELECT * FROM produk WHERE id_produk='$id_produk'");
+				$cek = mysqli_query($koneksi, "SELECT * FROM jadwal_karyawan WHERE id_karyawan='$id_karyawan'");
 				if(mysqli_num_rows($cek) == 0){
-						$insert = mysqli_query($koneksi, "INSERT INTO produk(id_produk, nama_produk, unit, harga)
-															VALUES('$id_produk','$nama_produk','$unit','$harga')") or die(mysqli_error());
+						$insert = mysqli_query($koneksi, "INSERT INTO jadwal_karyawan(id_karyawan, nama_karyawan, pekerjaan, waktu)
+															VALUES('$id_karyawan','$nama_karyawan','$pekerjaan','$waktu')") or die(mysqli_error());
 						if($insert){
 							echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Data Produk Berhasil Di Simpan.</div>';
 						}else{
@@ -51,31 +51,31 @@
                         </div>
                         <div class="panel-body">
                   <div class="form-panel">
-                      <form class="form-horizontal style-form" action="input-produk.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                      <form class="form-horizontal style-form" action="?page=TambahKaryawan" method="post" enctype="multipart/form-data" name="form1" id="form1">
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Id Karyawan</label>
                               <div class="col-sm-10">
-                                  <input name="id_produk" type="text" id="id_produk" class="form-control" autocomplete="off" placeholder="Auto Number Tidak perlu di isi" readonly="readonly"/>
+                                  <input name="id_karyawan" type="text" id="id_karyawan" class="form-control" autocomplete="off" placeholder="Auto Number Tidak perlu di isi" readonly="readonly"/>
                               </div>
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Nama Karyawan</label>
                               <div class="col-sm-10">
-                            <input name="nama_produk" type="text" id="nama_produk" class="form-control" autocomplete="off" placeholder="Nama Produk" autocomplete="off" required />
+                            <input name="nama_karyawan" type="text" id="nama_karyawan" class="form-control" autocomplete="off" placeholder="Nama Produk" autocomplete="off" required />
                               
                             </div>
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Unit</label>
                               <div class="col-sm-10">
-                            <input name="unit" type="text" id="unit" class="form-control" autocomplete="off" placeholder="Unit Produk" autocomplete="off" required />
+                            <input name="pekerjaan" type="text" id="pekerjaan" class="form-control" autocomplete="off" placeholder="Unit Produk" autocomplete="off" required />
                               
                             </div>
                           </div>
                           <div class="form-group">
                               <label class="col-sm-2 col-sm-2 control-label">Harga</label>
                               <div class="col-sm-10">
-                            <input name="harga" type="text" id="harga" class="form-control" autocomplete="off" placeholder="Harga" autocomplete="off" required />
+                            <input name="waktu" type="datetime-local" id="waktu" class="form-control" autocomplete="off" placeholder="Harga" autocomplete="off" required />
                             </div>
                           </div>
                           

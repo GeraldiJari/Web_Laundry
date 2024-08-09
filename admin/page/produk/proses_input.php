@@ -5,7 +5,7 @@ $namafolder="../gambar_product/"; //tempat menyimpan file
 
 if (!empty($_FILES["nama_file"]["tmp_name"]))
 {
-	    $jenis_gambar=$_FILES['nama_file']['type'];
+	  $jenis_gambar=$_FILES['nama_file']['type'];
       $id_produk	 = $_POST['id_produk'];
       $nama_produk = $_POST['nama_produk'];
       $info_produk = $_POST['info_produk'];

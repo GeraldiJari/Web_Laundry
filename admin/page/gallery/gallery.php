@@ -98,8 +98,8 @@
                     <td width="70px"><center><?php echo $data['id_gallery'];?></center></td>
                     <td width="70px"><img class="img" width="70px" height="70px" src="<?= $data['gambar']; ?>"></td>
                     <td><center><?php echo $data['info_gb'];?></center></td>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Member" href="edit-gallery.php?hal=edit&kd=<?php echo $data['id_gallery'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['id_gallery'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Member" href="?page=HapusGallery&kd=<?php echo $data['id_gallery'];?>"><span class="glyphicon glyphicon-trash"></a></center></td></tr></div>
+                    <td><center><div id="thanks">  
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['id_gallery'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Member" href="?page=HapusGallery&kd=<?php echo $data['id_gallery'];?>"><span class="fas fa-trash"></span></a></center></td></tr></div>
                  <?php   
               } 
               ?>
@@ -107,7 +107,7 @@
                    </table>
                   <!-- </div>-->
                 <div class="text-right">
-                  <a href="input-member.php" class="btn btn-sm btn-warning">Tambah Member <i class="fa fa-arrow-circle-right"></i></a>
+                  <a href="input-member.php" class="btn btn-sm btn-warning">Tambah Gambar <i class="fa fa-arrow-circle-right"></i></a>
               
                 </div>
               </div> 

@@ -100,13 +100,17 @@
         <!-- /.row -->
 
         <!-- Features Section -->
+    <div class="container">
+        <!-- Service Tabs -->
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Project yang kami sediakan</h2>
+        <div class="col-lg-12">
+                <div class="page-header panel panel-info panel-heading">
+                    <div class="panel-heading text-center"><h4>Produk yang kami sediakan<h4></div>
+                </div>
             </div>
             <div class="col-md-6">
                 <p>Kami menyediakan produk sembako rumah tangga dan cek kesehatan diantaranya:</p>
-                <ul>
+                 <ul>
                     <li>Beras</li>
                     <li>mie instant</li>
                     <li>minyak goreng</li>
@@ -115,12 +119,41 @@
                     <li>alat-alat rumah tangga</li>
                     <li>cek tensi</li>
                 </ul>
-                <p>Kami selalu memberikan kepuasan kepada pelanggan baik dari pelayanan dan kualitas barang.</p></div>
-            <div class="col-md-6">
-                <img class="img-responsive" src="image/slide4.jpg" alt="">
-                <img class="img-responsive" src="image/slide4.jpg" alt="">
+            </div>
+        <?php include "conn.php"; ?>
+            <div class="col-lg-12 text-center">
+            <?php $query1="select img, nama_produk, info_produk, kategori from produk LIMIT 6";
+                    $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
+                    ?>
+                    <?php 
+                     $no=0;
+                     while($data=mysqli_fetch_array($tampil))
+                    { $no++; ?>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <h2><?php echo $data['nama_produk']; ?></h2>
+                    <h2><img class="img" width="100px" height="100px" src="admin/<?php echo $data['img']; ?>"/></h2>
+                </div>
+            </div>
+             <?php   
+              } 
+              ?>
+        </div>
+                    </div>                  
+                </div>
+
             </div>
         </div>
+
+        <!-- Service List -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+
+        <hr>
+
+        <!-- Footer -->
+        <?php include "footer.php"; ?>
+
+    </div>
         <!-- /.row -->
 
         <hr>

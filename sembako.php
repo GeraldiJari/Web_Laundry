@@ -91,7 +91,6 @@
                     <h2><?php echo $data['nama_produk']; ?></h2>
                     <h2><img class="img" width="250px" height="250px" src="admin/<?php echo $data['img']; ?>"/></h2>
                     <p><?php echo $data['info_produk']; ?></p>
-                    <p>Harga: <?php echo $data['Harga']; ?></p>
                 </div>
             </div>
              <?php   

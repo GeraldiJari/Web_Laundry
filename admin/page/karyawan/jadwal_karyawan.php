@@ -86,8 +86,8 @@
                     <td><?php echo $data['nama_karyawan'];?></td>
                     <td><?php echo $data['pekerjaan'];?></td>
                     <td><?php echo $data['waktu'];?></td>
-                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Produk" href="edit-karyawan.php?hal=edit&kd_cus=<?php echo $data['id_karyawan'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
-                    <a onclick="return confirm ('Yakin hapus <?php echo $data['nama_karyawan'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Produk" href="karyawan.php?hal=hapus&kd=<?php echo $data['id_karyawan'];?>"><span class="glyphicon glyphicon-trash"></a></center></td></tr></div>
+                    <td><center><div id="thanks"><a class="btn btn-sm btn-primary" data-placement="bottom" data-toggle="tooltip" title="Edit Produk" href="?page=EditKaryawan&kd=<?php echo $data['id_karyawan'];?>"><span class="glyphicon glyphicon-edit"></span></a>  
+                    <a onclick="return confirm ('Yakin hapus <?php echo $data['nama_karyawan'];?>.?');" class="btn btn-sm btn-danger tooltips" data-placement="bottom" data-toggle="tooltip" title="Hapus Produk" href="?page=HapusKaryawan&kd=<?php echo $data['id_karyawan'];?>"><span class="glyphicon glyphicon-trash"></a></center></td></tr></div>
                         <?php   
                     }?>
                     </tbody>
@@ -96,7 +96,7 @@
               <!-- /.card-body -->
             </div>
             <div class="text-right">
-                                    <a href="?page=InputKaryawan" class="btn btn-sm btn-warning">Input Karyawan <i class="fa fa-arrow-circle-right"></i></a>
+                                    <a href="?page=TambahKaryawan" class="btn btn-sm btn-warning">Input Karyawan <i class="fa fa-arrow-circle-right"></i></a>
                                 </div>
             
             <!-- /.card -->

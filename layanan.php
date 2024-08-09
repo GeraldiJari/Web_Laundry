@@ -80,9 +80,9 @@
                         <div class="row">
                         <?php include "conn.php"; ?>
             <div class="col-lg-12">
-                <h2 class="page-header">Testimoni</h2>
+                <h2 class="page-header">Alat Rumah Tangga</h2>
             </div>
-            <?php $query1="select gambar, info_gb from gallery";
+            <?php $query1="select img, nama_produk, info_produk, kategori from produk where kategori='KeperluanRT'";
                     $tampil=mysqli_query($koneksi, $query1) or die(mysqli_error());
                     ?>
                     <?php 
@@ -91,7 +91,8 @@
                     { $no++; ?>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <h2><img class="img" width="250px" height="250px" src="admin/<?php echo $data['gambar']; ?>"/></h2>
+                    <h2><?php echo $data['nama_produk']; ?></h2>
+                    <h2><img class="img" width="250px" height="250px" src="admin/<?php echo $data['img']; ?>"/></h2>
                 </div>
             </div>
              <?php   

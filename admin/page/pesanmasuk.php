@@ -82,6 +82,7 @@
                                         <th><center>Phone</center></th>
                                         <th><center>email</center></th>
                                         <th><center>message</center></th>
+                                        <th><center>tools</center></th>
                                     </tr>
                                 </thead>
                                 <?php 
@@ -95,7 +96,11 @@
                                     <td><?php echo $data['phone'];?></td>
                                     <td><?php echo $data['email'];?></td>
                                     <td><?php echo $data['message'];?></td>
-
+                                    <td>
+                                        <a href="?page=HapusPesan&kd=<?php echo $data['id']; ?>"
+                                        onclick="return confirm('Yakin ingin hapus <?= $data['id']; ?>');">
+                                        <span class="fas fa-trash"></span>
+                                    <td>
                                         <?php   
                                     }?>
                                     </tbody>

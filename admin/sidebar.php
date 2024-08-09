@@ -116,11 +116,11 @@ if (empty($_SESSION['username'])){
             </a>
           </li>
           <li class="nav-item">
-            <a href="?page=Pesan" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Pesanan
-                <span class="right badge badge-danger">New</span>
+                <span class="right badge badge-secondary">Close</span>
               </p>
             </a>
           </li>
