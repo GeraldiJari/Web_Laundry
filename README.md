@@ -1,5 +1,7 @@
 # Web Profil Toko YAN
 
+[Web Profil Toko YAN](https://github.com/GeraldiJari/YanResourceCode/tree/master) Klik link ini untuk mengarah ke branch master YanResourceCode
+
 ## Develop By Rhodes Team
 
 - **[Geraldi Jari Assaji]**: Bertanggung jawab untuk membuat bagian dari sisi User & Admin.
@@ -31,8 +33,8 @@ Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang website
 
 ---
 
-© 2024 Toko YAN. All rights reserved.
+© 2024 Rhodes Team. All rights reserved.
 
 
 
-[Web Profil Toko YAN](https://github.com/GeraldiJari/YanResourceCode/tree/master) Klik link ini untuk mengarah ke branch master YanResourceCode
+
